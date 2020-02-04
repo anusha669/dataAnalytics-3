@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row mt-10 py-3">
+
+        <div class="col-sm-3 ">
+            <mat-form-field>
+                <small id="tag_name" class="text-success">Academic Year</small>
+                <mat-select class="mt-3">
+                <mat-option *ngFor="let y of year" [value]="y">{{y}}</mat-option>
+                <!-- <mat-option value="sem2">Sem 2</mat-option>  -->
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="col-sm-3">
+            <mat-form-field>
+                <small id="tag_name" class="text-success ">Term</small>
+                <mat-select class="mt-3">
+                <mat-option  *ngFor="let t of term" [value]="t">{{t}}</mat-option>
+                <!-- <mat-option value="sem2">Sem 2</mat-option>  -->
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-sm-1">
+       
+            <button mat-raised-button  type="submit" style="background-color: #000080;color: white;" (click)="CheckUser()" >
+                <i class="fas fa-search"></i>   Search</button>
+        </div>
+
+        <div class="col-sm-4"></div>
+
+    </div>
+</div>
